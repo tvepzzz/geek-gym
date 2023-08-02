@@ -1,0 +1,29 @@
+.title {
+	font-family: var(--title-font);
+	margin-bottom: 2rem;
+}
+.pagination {
+	&__container {
+		display: flex;
+		justify-content: center;
+		margin: 3rem 0;
+	}
+	& ul li {
+		& button {
+			background-color: var(--container-color);
+			color: var(--title-color) !important;
+			&:hover {
+				background-color: var(--first-color-alt);
+			}
+		}
+		& div {
+			color: var(--text-color);
+		}
+	}
+}
+.exercises__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}

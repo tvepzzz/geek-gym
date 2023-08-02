@@ -1,0 +1,34 @@
+.card {
+	background-color: var(--container-color);
+	overflow: hidden;
+	border-radius: 1rem;
+	width: 350px;
+	& h2 {
+		margin: 1rem 1.6rem;
+		text-transform: capitalize;
+	}
+}
+
+.info {
+	display: flex;
+	margin: 1rem 1.6rem;
+	align-items: center;
+	justify-content: space-between;
+	&__container {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__tag {
+		background-color: var(--first-color);
+		padding: 0.2rem 0.5rem;
+		border-radius: 1rem;
+		color: var(--title-color);
+		height: fit-content;
+	}
+	&__button {
+		color: var(--title-color);
+		cursor: pointer;
+	}
+}
