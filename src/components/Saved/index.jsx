@@ -18,11 +18,13 @@ const Saved = () => {
 					{saved.map(e => {
 						const isSaved = checkSaved(e.id)
 						return (
-							<ExerciseCard
-								exercise={e}
-								savedState={isSaved}
-								remove={removeExercise}
-							/>
+							<div key={e.id}>
+								<ExerciseCard
+									exercise={e}
+									savedState={isSaved}
+									remove={removeExercise}
+								/>
+							</div>
 						)
 					})}
 				</div>

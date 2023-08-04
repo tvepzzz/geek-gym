@@ -14,7 +14,7 @@ const ExerciseCard = ({ exercise, style, remove, add, savedState }) => {
 				onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 			>
 				<img
-					src={exercise.gifUrl}
+					src={exercise?.gifUrl}
 					alt={exercise.name}
 					loading='lazy'
 					className={styles.img}
